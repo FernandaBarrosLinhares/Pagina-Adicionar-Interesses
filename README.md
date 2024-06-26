@@ -5,7 +5,7 @@ Página para adicionar nossos interesses e hobbies, sendo possível armazenar os
 Também, temos uma seção de notícias de destaque do dia, parecido como um “card” de anuncio patrocinado através do consumo de Api na url:
 https://servicodados.ibge.gov.br/api/v3/noticias/?tipo=release
 
-<img alt="Layout" src="assets/template.png">
+<img alt="Layout" src="src/assets/template.png">
 
 
 ### Exercício curso Futuro DEV, semana 05, módulo 2
