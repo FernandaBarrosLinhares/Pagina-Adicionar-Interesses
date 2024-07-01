@@ -7,7 +7,7 @@ function adicionarInteresse() {
       item.textContent = valorInput_interesse;
       let interesses = pegarDados();
       interesses.push(item.textContent);
-      localStorage.setItem("meus-interesses", JSON.stringify(interesses)); // salvar no localStorage
+      localStorage.setItem("meus-interesses", JSON.stringify(interesses)); 
       mostrarInteresses();
       input_interesse.value = "";
     } else {
@@ -37,7 +37,6 @@ function adicionarInteresse() {
   
       let btn_excluir = document.createElement("button");
       btn_excluir.textContent = "Excluir";
-      // btn_excluir.className = 'btn'
       btn_excluir.onclick = function () {
         excluirInteresse(interesse);
       };
@@ -53,7 +52,7 @@ function adicionarInteresse() {
     localStorage.setItem("meus-interesses", JSON.stringify(interesses));
     mostrarInteresses();
   }
-  
+
   async function news() {
     const retornoFetch = await fetch(
       "https://servicodados.ibge.gov.br/api/v3/noticias/?tipo=release"
@@ -69,6 +68,8 @@ function adicionarInteresse() {
     localStorage.removeItem("meus-interesses");
   }
   
+
+
 setInterval(() => {
 mostrarInteresses();
 }, 1000);
